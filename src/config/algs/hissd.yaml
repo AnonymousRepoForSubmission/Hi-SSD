@@ -11,7 +11,7 @@ target_update_interval: 80
 
 # use the Q_Learner to train
 agent_output_type: "q"
-learner: "model_learner"
+learner: "hissd_learner"
 double_q: True
 mixer: "mt_qattn"
 mixing_embed_dim: 32
@@ -21,10 +21,10 @@ hypernet_embed: 64
 name: "mto"
 
 # agent type
-agent: "mt_model"
+agent: "mt_hissd"
 
 # mac
-mac: "mt_model_mac"
+mac: "mt_hissd_mac"
 
 # params about trans mixing network
 entity_embed_dim: 64
